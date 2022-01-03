@@ -1,1 +1,100 @@
-
+***********ví dụ có header nhưng không cố định*************
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>F8-Shop</title>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin : 0;
+            }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+        ul{
+            height: 1000000px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <h1>position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>
+**************Dùng Position: fixed để cố định header****************
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>F8-Shop</title>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin : 0;
+            }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+            position: fixed;
+        }
+        ul{
+            height: 1000000px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <h1>position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>
+*********************Cố định header bằng Position với Top 0 0 Right 0 Left 0***************************
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>F8-Shop</title>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin : 0;
+            }
+        .header{
+            height: 100px;
+            background-color: blue;
+            top:0;
+            left: 0;
+            right: 0;
+            position: fixed;
+        }
+        ul{
+            height: 2000px;
+        }
+        h1{
+            margin-top: 100px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <h1>position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>
